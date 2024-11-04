@@ -6,7 +6,7 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.blue, Colors.purple],
             begin: Alignment.topCenter,
@@ -18,7 +18,7 @@ class WelcomePage extends StatelessWidget {
           children: [
 
             // Welcome Text
-            Text(
+            const Text(
               'Welcome to MyApp!',
               style: TextStyle(
                 fontSize: 32,
@@ -28,10 +28,10 @@ class WelcomePage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             // Description Text
-            Text(
+           const Text(
               'Your app description goes here.',
               style: TextStyle(
                 fontSize: 16,
@@ -40,7 +40,7 @@ class WelcomePage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
 
-            SizedBox(height: 40),
+           const SizedBox(height: 40),
 
             // Get Started Button
             ElevatedButton(
@@ -48,13 +48,13 @@ class WelcomePage extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, '/home');
               },
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
                 backgroundColor: Colors.white,
               ),
-              child: Text(
+              child: const Text(
                 'Get Started',
                 style: TextStyle(color: Colors.blue),
               ),

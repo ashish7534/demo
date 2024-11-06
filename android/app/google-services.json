@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63604192840",
+    "project_id": "fir-project-cb330",
+    "storage_bucket": "fir-project-cb330.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63604192840:android:48f3f7f2bd88a647044a7d",
+        "android_client_info": {
+          "package_name": "com.example.demoproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAconlAm4pjolxCJEzDD_YWHUAMFeHL0ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

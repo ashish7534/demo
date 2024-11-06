@@ -105,7 +105,7 @@ class _FormScreenState extends State<FormScreen> {
               ),
               SizedBox(height: 32.0),
               ElevatedButton(
-                onPressed: _submitForm,
+                onPressed: _addUser,
                 child: Text('Submit'),
               ),
             ],

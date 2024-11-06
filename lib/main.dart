@@ -1,4 +1,6 @@
 import 'package:demoproject/adddata.dart';
+import 'package:demoproject/firebase/UserList.dart';
+import 'package:demoproject/firebase/update.dart';
 import 'package:demoproject/form.dart';
 import 'package:demoproject/welcome.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -36,7 +38,36 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:FormScreen(),
+      home:HomePage()
     );
   }
 }
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return    Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>FormScreen()));
+            }, child: Text("Add User")),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>UsersListPage()));
+            }, child: Text("Fetch User")),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
